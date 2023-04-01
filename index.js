@@ -15,9 +15,18 @@ let sentenceWithHiddenWords;
 let hiddenWordIndices;
 let part;
 
-function startGame() {
-  // Get the original sentence from the input field
-  originalSentence = sentenceInput.value;
+let rom1014 = "How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching? And how are they to preach unless they are sent? As it is written, \"How beautiful are the feet of those who preach the good news!\""
+let is536 = "All we like sheep have gone astray; we have turned—every one—to his own way; and the Lord has laid on him the iniquity of us all."
+let rom58 = "but God shows his love for us in that while we were still sinners, Christ died for us."
+
+function startGame(s) {
+  if (s) {
+    originalSentence = s;
+  }
+  else {
+    // Get the original sentence from the input field
+    originalSentence = sentenceInput.value;
+  }
 
   // Clear the input field
   sentenceInput.value = "";
